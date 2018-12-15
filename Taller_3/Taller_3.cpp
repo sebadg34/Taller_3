@@ -3,9 +3,11 @@
 
 #include "pch.h"
 #include <iostream>
+#include "SistemaPokeGo.h"
 
 int main()
 {
+	SistemaPokeGo sistema;
     std::cout << "Hello World!\n"; 
 }
 

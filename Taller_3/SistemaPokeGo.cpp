@@ -14,6 +14,7 @@ using namespace std;
 
 SistemaPokeGo::SistemaPokeGo()
 {
+	LecturaArchivos();
 	MenuPrincipal();
 }
 
@@ -32,10 +33,9 @@ void SistemaPokeGo::MenuPrincipal()
 	while (menu) {
 
 		cout << "*************************************************************************************" << endl;
-		cout << "boom:" << endl;
 		cout << "*************************************************************************************" << endl;
 		cout << "[1] Buscar Pokemon" << endl;
-		cout << "[2]  Pokédex" << endl;
+		cout << "[2]  Pokedex" << endl;
 		cout << "[3]  Mochila" << endl;
 		cout << "[4]  Salir" << endl;
 
@@ -92,17 +92,17 @@ void SistemaPokeGo::Buscar_Pokemon()
 	cout << "Buscando pokemon en la cercania..." << endl;
 	PlaySound(TEXT("buscar.wav"), NULL, SND_SYNC);
 	
-	Sleep(1000);
+	Sleep(250);
 
 	cout << "Buscando pokemon en la cercania..." << endl;
 	PlaySound(TEXT("buscar.wav"), NULL, SND_SYNC);
 	
-	Sleep(1000);
+	Sleep(250);
 
 	cout << "Buscando pokemon en la cercania..." << endl;
 	PlaySound(TEXT("buscar.wav"), NULL, SND_SYNC);
 
-	Sleep(1000);
+	Sleep(250);
 
 	//variable que varia entre 0 y 100, si el valor es menor de 15 se encuentra un pokemon.
 	int porcentajeBusqueda = rand() % 100;
@@ -116,7 +116,7 @@ void SistemaPokeGo::Buscar_Pokemon()
 	else {
 		cout << "NO FUE ENCONTRADO NINGUN POKEMON EN LAS CERCANIAS" << endl;
 		PlaySound(TEXT("errorBusqueda.wav"), NULL, SND_SYNC);
-		Sleep(2000);
+		Sleep(1000);
 		return;
 		
 	}
@@ -134,6 +134,37 @@ void SistemaPokeGo::Abrir_Mochila()
 void SistemaPokeGo::LecturaArchivos()
 {
 
+	//Se abre el archivo.
+	std::ifstream archivoPokedex;
+	archivoPokedex.open("Pokedex.txt", ifstream::in);
+	string id;
+	string nombre;
+	string ataque;
+	string probabilidad;
+
+	string linea;
+
+	if (!archivoPokedex.is_open()) {
+		cout << "Pokedex no cargada, funcionalidades del programa dehabilitadas" << endl;
+	
+	}
+
+	while (getline(archivoPokedex, linea)) {
+	
+
+		stringstream ss(linea); //extrae linea
+		getline(ss, id, ',');
+		getline(ss, nombre, ',');
+		getline(ss, ataque, ',');
+		getline(ss, probabilidad, ',');
+	
+
+
+
+
+
+
+	}
 
 
 

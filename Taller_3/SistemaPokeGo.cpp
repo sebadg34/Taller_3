@@ -89,6 +89,38 @@ void SistemaPokeGo::MenuCaptura()
 
 void SistemaPokeGo::Buscar_Pokemon()
 {
+	cout << "Buscando pokemon en la cercania..." << endl;
+	PlaySound(TEXT("buscar.wav"), NULL, SND_SYNC);
+	
+	Sleep(1000);
+
+	cout << "Buscando pokemon en la cercania..." << endl;
+	PlaySound(TEXT("buscar.wav"), NULL, SND_SYNC);
+	
+	Sleep(1000);
+
+	cout << "Buscando pokemon en la cercania..." << endl;
+	PlaySound(TEXT("buscar.wav"), NULL, SND_SYNC);
+
+	Sleep(1000);
+
+	//variable que varia entre 0 y 100, si el valor es menor de 15 se encuentra un pokemon.
+	int porcentajeBusqueda = rand() % 100;
+	cout << porcentajeBusqueda << endl;
+	if (porcentajeBusqueda <= 15) {
+		cout << "POKEMON ENCONTRADO!" << endl;
+		Sleep(4000);
+		MenuCaptura(); //Despliega menu captura
+		return;
+	}
+	else {
+		cout << "NO FUE ENCONTRADO NINGUN POKEMON EN LAS CERCANIAS" << endl;
+		PlaySound(TEXT("errorBusqueda.wav"), NULL, SND_SYNC);
+		Sleep(2000);
+		return;
+		
+	}
+
 }
 
 void SistemaPokeGo::Desplegar_Pokedex()

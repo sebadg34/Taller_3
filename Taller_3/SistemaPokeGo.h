@@ -11,6 +11,9 @@ public:
 	void Buscar_Pokemon();
 	void Desplegar_Pokedex();
 	void Abrir_Mochila();
+	void LecturaArchivos();
+	void CapturarPokemon();
+	void TransferirPokemon();
 	
 
 

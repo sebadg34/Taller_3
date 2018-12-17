@@ -98,3 +98,20 @@ void SistemaPokeGo::Desplegar_Pokedex()
 void SistemaPokeGo::Abrir_Mochila()
 {
 }
+
+void SistemaPokeGo::LecturaArchivos()
+{
+
+
+
+
+
+}
+
+void SistemaPokeGo::CapturarPokemon()
+{
+}
+
+void SistemaPokeGo::TransferirPokemon()
+{
+}

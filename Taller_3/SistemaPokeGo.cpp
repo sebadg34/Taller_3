@@ -40,7 +40,7 @@ void SistemaPokeGo::MenuPrincipal()
 		cout << "[4]  Salir" << endl;
 
 		getline(cin, opcion);
-		try { //Validar respuesta del menu
+		try { //Validar respuesta del menuasd
 			std::stoi(opcion);
 		}
 		catch (const std::exception) {

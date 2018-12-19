@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "SistemaPokeGo.h"
+#include "NodoPokemon.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -21,6 +22,9 @@ SistemaPokeGo::SistemaPokeGo()
 
 SistemaPokeGo::~SistemaPokeGo()
 {
+
+
+
 }
 
 void SistemaPokeGo::MenuPrincipal()
@@ -159,7 +163,7 @@ void SistemaPokeGo::LecturaArchivos()
 		getline(ss, probabilidad, ',');
 	
 
-
+		NodoPokemon* nuevoPokemon = new NodoPokemon(std::stoi(id), nombre, ataque, std::stof(probabilidad));
 
 
 

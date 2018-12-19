@@ -153,10 +153,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ArbolPokedex.h" />
+    <ClInclude Include="NodoHoja.h" />
+    <ClInclude Include="NodoPokemon.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SistemaPokeGo.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ArbolPokedex.cpp" />
+    <ClCompile Include="NodoHoja.cpp" />
+    <ClCompile Include="NodoPokemon.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

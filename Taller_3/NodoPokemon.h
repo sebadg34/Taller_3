@@ -1,7 +1,7 @@
 #pragma once
 #include "pch.h"
 #include <iostream>
-#include "NodoHoja.h"
+#include "GrupoClaves.h"
 
 using namespace std;
 
@@ -28,12 +28,13 @@ public:
 	void SetProbabilidad(float probabilidad);
 	void SetEstado(bool captura);
 
-	
+	NodoPokemon*Padre;
 
 	//hijos izquierdo y derecho del nodo
 	
 
 private:
+
 	int id;
 	string nombre;
 	string ataque;

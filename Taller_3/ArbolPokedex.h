@@ -1,18 +1,19 @@
 #pragma once
 #include "NodoPokemon.h"
-#include "NodoHoja.h"
+#include "GrupoClaves.h"
 class ArbolPokedex
 {
 public:
 	ArbolPokedex();
 	~ArbolPokedex();
-	ArbolPokedex(NodoHoja raiz);
+	ArbolPokedex(GrupoClaves raiz);
 	void Insertar();
-	NodoPokemon* Buscar(int id, NodoHoja nodo);
+	NodoPokemon* Buscar(int id, GrupoClaves nodo);
+	void Dividir(NodoPokemon NodoAgregar, GrupoClaves grupo_a_dividir);
 
 private:
 
-	NodoHoja*Raiz;
+	GrupoClaves*Raiz;
 
 };
 

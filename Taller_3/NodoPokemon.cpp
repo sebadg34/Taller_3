@@ -12,7 +12,7 @@ NodoPokemon::NodoPokemon(int id, string nombre, string ataque, float probabilida
 	this->ataque = ataque;
 	this->probabilidad = probabilidad;
 	this->capturado = false;
-	
+	this->Padre = nullptr;
 
 }
 

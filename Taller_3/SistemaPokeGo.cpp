@@ -152,23 +152,27 @@ void SistemaPokeGo::LecturaArchivos()
 		cout << "Pokedex no cargada, funcionalidades del programa dehabilitadas" << endl;
 	
 	}
-
-	while (getline(archivoPokedex, linea)) {
-	
-
-		stringstream ss(linea); //extrae linea
-		getline(ss, id, ',');
-		getline(ss, nombre, ',');
-		getline(ss, ataque, ',');
-		getline(ss, probabilidad, ',');
-	
-
-		NodoPokemon* nuevoPokemon = new NodoPokemon(std::stoi(id), nombre, ataque, std::stof(probabilidad));
+	else {
+		cout << "Pokedex cargada..." << endl;
+		while (getline(archivoPokedex, linea)) {
 
 
+			stringstream ss(linea); //extrae linea
+			getline(ss, id, ',');
+			getline(ss, nombre, ',');
+			getline(ss, ataque, ',');
+			getline(ss, probabilidad, ',');
 
 
+			NodoPokemon* nuevoPokemon = new NodoPokemon(std::stoi(id), nombre, ataque, std::stof(probabilidad));
+
+
+
+
+		}
 	}
+
+	
 
 
 

@@ -24,10 +24,10 @@
     <ClInclude Include="NodoPokemon.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="NodoHoja.h">
+    <ClInclude Include="ArbolPokedex.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="ArbolPokedex.h">
+    <ClInclude Include="GrupoClaves.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,10 +44,10 @@
     <ClCompile Include="NodoPokemon.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="NodoHoja.cpp">
+    <ClCompile Include="ArbolPokedex.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="ArbolPokedex.cpp">
+    <ClCompile Include="GrupoClaves.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
